@@ -221,6 +221,11 @@ PrefabInstance:
       propertyPath: m_Center.x
       value: 0.000015497208
       objectReference: {fileID: 0}
+    - target: {fileID: 3774319721948651138, guid: e65b8b1f23f8b5543889949afe51cbff,
+        type: 3}
+      propertyPath: speed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3774319721948651139, guid: e65b8b1f23f8b5543889949afe51cbff,
         type: 3}
       propertyPath: m_Name

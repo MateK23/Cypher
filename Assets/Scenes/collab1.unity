@@ -545,7 +545,11 @@ MonoBehaviour:
   - {fileID: 1156125327}
   - {fileID: 812788382}
   - {fileID: 1303707532}
+  secondsBetween: 8
+  passedtime: 0
   plaer: {fileID: 835813803}
+  counter: 0
+  rateCounter: 0
 --- !u!4 &520000156
 Transform:
   m_ObjectHideFlags: 0
@@ -1897,7 +1901,12 @@ PrefabInstance:
     - target: {fileID: 4968960434319531299, guid: d448aaea74588514c8ef9951958eb2cb,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 33.05005
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4968960434319531299, guid: d448aaea74588514c8ef9951958eb2cb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -39
       objectReference: {fileID: 0}
     - target: {fileID: 5647110693119263292, guid: d448aaea74588514c8ef9951958eb2cb,
         type: 3}

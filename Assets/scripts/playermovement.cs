@@ -36,8 +36,8 @@ public class playermovement : MonoBehaviour
 
     void Movement()
     {
-        //   float horizontalmove = Input.GetAxisRaw("Horizontal");
-        //   float verticalmove = Input.GetAxisRaw("Vertical");
+        // float horizontalmove = Input.GetAxisRaw("Horizontal");
+        // float verticalmove = Input.GetAxisRaw("Vertical");
         float horizontalmove = joy.Horizontal;
         float verticalmove = joy.Vertical;
         direction = new Vector3(horizontalmove, 0.0f, verticalmove);
@@ -46,7 +46,7 @@ public class playermovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationspeed * Time.deltaTime);
         }
 
-        //rb.MovePosition(transform.position +speed * Time.deltaTime * direction);
+        // rb.MovePosition(transform.position +speed * Time.deltaTime * direction);
         rb.velocity = direction * speed;
     }
     public void death()

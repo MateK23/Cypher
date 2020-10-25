@@ -14,12 +14,14 @@ public class enemyspawner : MonoBehaviour
     private GameObject tag;
     public Transform[] pozicia;
     int Spawnrate = 1;
-    float secondsBetween = 8f;
-    float passedtime = 0.0f;
+    int Maxspawnrate = 6;
+    public float secondsBetween = 8f;
+    public float passedtime = 0.0f;
     public Transform plaer;
     Vector3 fwd, offset;
     float distance = 5f;
-    float counter = 0;
+    public  float counter = 0;
+    public  float rateCounter = 0;
     void Update()
     {
         int number = (int)Random.Range(1, 5);
@@ -54,16 +56,23 @@ public class enemyspawner : MonoBehaviour
                         StartCoroutine(BeforeSpawn(sensor, trapEnemy));
                     }
                 }
-
+             
 
             }
+             
         }
-        counter += Time.deltaTime;
+             counter += Time.deltaTime;
+             rateCounter += Time.deltaTime;
 
-        if (counter > 10f)
+        if (counter > 10f && Spawnrate <= Maxspawnrate)
         {
             Spawnrate++;
             counter = 0;
+        }
+        if (rateCounter > 10f && secondsBetween < 1f)
+        {
+            secondsBetween-=1f;
+            rateCounter = 0;
         }
 
     }
