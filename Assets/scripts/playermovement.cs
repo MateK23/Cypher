@@ -13,6 +13,7 @@ public class playermovement : MonoBehaviour
     public float rotationspeed;
     public static float score;
     public Text scoretext;
+    public Joystick joy;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -34,8 +35,10 @@ public class playermovement : MonoBehaviour
 
     void Movement()
     {
-        float horizontalmove = Input.GetAxisRaw("Horizontal");
-        float verticalmove = Input.GetAxisRaw("Vertical");
+        //   float horizontalmove = Input.GetAxisRaw("Horizontal");
+        //   float verticalmove = Input.GetAxisRaw("Vertical");
+        float horizontalmove = joy.Horizontal;
+        float verticalmove = joy.Vertical;
         direction = new Vector3(horizontalmove, 0.0f, verticalmove);
         if (direction != Vector3.zero)
         {
