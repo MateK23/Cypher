@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: -2502853605345965395
     second: Sprite|CameraAction
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: f0eda4e39e369e54893930f0e09e2bfa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

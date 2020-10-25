@@ -14,6 +14,7 @@ public class playermovement : MonoBehaviour
     public static float score;
     public Text scoretext;
     public Joystick joy;
+    public AudioSource sheaskda;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -42,14 +43,15 @@ public class playermovement : MonoBehaviour
         direction = new Vector3(horizontalmove, 0.0f, verticalmove);
         if (direction != Vector3.zero)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction),rotationspeed*Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), rotationspeed * Time.deltaTime);
         }
 
         //rb.MovePosition(transform.position +speed * Time.deltaTime * direction);
-        rb.velocity=direction*speed ;
+        rb.velocity = direction * speed;
     }
     public void death()
     {
+        sheaskda.Play();
         SceneManager.LoadScene(2);
     }
 

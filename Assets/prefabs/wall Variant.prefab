@@ -184,7 +184,7 @@ PrefabInstance:
     - target: {fileID: 3856845954657836381, guid: dc96fa607c50dfb48b17c0f2eff4ac71,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3856845954657836383, guid: dc96fa607c50dfb48b17c0f2eff4ac71,
         type: 3}
@@ -195,6 +195,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856845956235767302, guid: dc96fa607c50dfb48b17c0f2eff4ac71,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856845956235767302, guid: dc96fa607c50dfb48b17c0f2eff4ac71,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856845956235767302, guid: dc96fa607c50dfb48b17c0f2eff4ac71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3856845956235767302, guid: dc96fa607c50dfb48b17c0f2eff4ac71,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.48
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3856845954657836379, guid: dc96fa607c50dfb48b17c0f2eff4ac71, type: 3}
